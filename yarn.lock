@@ -292,6 +292,16 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@ngrx/store-devtools@^8.2.0":
+  version "8.2.0"
+  resolved "http://r.cnpmjs.org/@ngrx/store-devtools/download/@ngrx/store-devtools-8.2.0.tgz#32a29f20ee53da64bead63a84cf27b5d12d2d9a1"
+  integrity sha1-MqKfIO5T2mS+rWOoTPJ7XRLS2aE=
+
+"@ngrx/store@^8.2.0":
+  version "8.2.0"
+  resolved "http://r.cnpmjs.org/@ngrx/store/download/@ngrx/store-8.2.0.tgz#8374fa803babdbf2a599240a8e546fa726d83edd"
+  integrity sha1-g3T6gDur2/KlmSQKjlRvpybYPt0=
+
 "@ngtools/webpack@8.2.1":
   version "8.2.1"
   resolved "http://r.cnpmjs.org/@ngtools/webpack/download/@ngtools/webpack-8.2.1.tgz#a4e0e2ad37932b225af9ca14a93e47201b3ca9c0"
@@ -5030,6 +5040,16 @@ prepend-http@^1.0.0:
   version "1.0.4"
   resolved "http://r.cnpmjs.org/prepend-http/download/prepend-http-1.0.4.tgz#d4f4562b0ce3696e41ac52d0e002e57a635dc6dc"
   integrity sha1-1PRWKwzjaW5BrFLQ4ALlemNdxtw=
+
+primeicons@^2.0.0:
+  version "2.0.0"
+  resolved "http://r.cnpmjs.org/primeicons/download/primeicons-2.0.0.tgz#ec3e5a8d4d04a09309225a5a57deb911e08dc0d3"
+  integrity sha1-7D5ajU0EoJMJIlpaV965EeCNwNM=
+
+primeng@^8.0.2:
+  version "8.0.2"
+  resolved "http://r.cnpmjs.org/primeng/download/primeng-8.0.2.tgz#c29f33dd1644ed44268a62eb2db0334a10c8ebea"
+  integrity sha1-wp8z3RZE7UQmimLrLbAzShDI6+o=
 
 process-nextick-args@~2.0.0:
   version "2.0.1"
