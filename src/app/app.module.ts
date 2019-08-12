@@ -1,20 +1,24 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { StoreModule } from "@ngrx/store";
-import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 import { HttpClientModule } from "@angular/common/http";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
+import { AppRoutingModule } from "@app/app-routing.module";
+import { AppComponent } from "@app/app.component";
+import { AppStoreModule } from "@app/store/app-store.module";
+import { UiModule } from "./ui.module";
+import { AuthComponent } from "./components/auth/auth.component";
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, AuthComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
-    StoreModule.forRoot({}),
-    StoreDevtoolsModule.instrument()
+    AppStoreModule,
+    UiModule
   ],
   providers: [],
   bootstrap: [AppComponent]
