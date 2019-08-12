@@ -2,6 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { AppState } from "./store/app-store.module";
 import { Store } from "@ngrx/store";
 import { LoginUser, SetInitialUser } from "./store/actions/auth.action";
+import { MessageService } from "primeng/components/common/messageservice";
 
 @Component({
   selector: "app-root",
@@ -10,9 +11,25 @@ import { LoginUser, SetInitialUser } from "./store/actions/auth.action";
 })
 export class AppComponent implements OnInit {
   title = "idea-app";
-  constructor(private store: Store<AppState>) {}
+  constructor(
+    private store: Store<AppState>,
+    private messageService: MessageService
+  ) {}
 
   ngOnInit() {
     this.store.dispatch(new SetInitialUser());
+    this.store
+      .select(state => state.error)
+      .subscribe(val => this.showError(val.error));
+  }
+
+  showError(err) {
+    if (err) {
+      this.messageService.add({
+        severity: "error",
+        summary: "Error Message",
+        detail: err.message || "internal server error"
+      });
+    }
   }
 }
