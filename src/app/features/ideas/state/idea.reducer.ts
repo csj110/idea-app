@@ -20,8 +20,7 @@ export const ideaReducer: (state: IdeaState, action: Action) => IdeaState = (
       return {
         ...state,
         loading: true,
-        loaded: false,
-        selectedIdea: action.payload
+        loaded: false
       };
     case IdeaActions.CREATE_IDEA:
       return { ...state, loading: true, loaded: false };
@@ -51,7 +50,8 @@ export const ideaReducer: (state: IdeaState, action: Action) => IdeaState = (
           [action.payload.id]: action.payload
         },
         loading: false,
-        loaded: true
+        loaded: true,
+        selectedIdea: action.payload.id
       };
     case IdeaActions.CREATE_IDEA_SUCCESS:
       return {
