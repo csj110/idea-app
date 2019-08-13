@@ -1,0 +1,29 @@
+p-card {
+  margin: 1rem;
+}
+.idea {
+  display: flex;
+
+  &-header {
+    margin-left: 1rem;
+  }
+
+  &-votes {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    align-items: center;
+
+    i {
+      font-size: 1.5rem;
+    }
+  }
+  &-description {
+    margin-bottom: 1rem;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+}

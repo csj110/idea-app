@@ -13,6 +13,14 @@ export class NavbarComponent implements OnInit {
       label: "Home",
       routerLink: ["/"],
       icon: "fa fa-home"
+    },
+    {
+      label: "Users",
+      routerLink: ["/users"]
+    },
+    {
+      label: "Ideas",
+      routerLink: ["/ideas"]
     }
   ];
   constructor(private authService: AuthService) {}

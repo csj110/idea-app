@@ -8,8 +8,8 @@ import { AppComponent } from "@app/app.component";
 import { AppStoreModule } from "@app/store/app-store.module";
 import { UiModule } from "./ui.module";
 import { AuthComponent } from "./components/auth/auth.component";
-import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { NavbarComponent } from './components/navbar/navbar.component' 
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { NavbarComponent } from "./components/navbar/navbar.component";
 @NgModule({
   declarations: [AppComponent, AuthComponent, NavbarComponent],
   imports: [

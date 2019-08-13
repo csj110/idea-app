@@ -37,12 +37,12 @@ export class ApiService {
     return this.request("GET", `user/${username}`);
   }
 
-  getIdeas(page: number): Observable<Idea[]> {
+  getIdeas(page?: number): Observable<Idea[]> {
     const endpoint = page ? `idea/all?page=${page}` : "idea/all";
     return this.request("GET", endpoint);
   }
 
-  getNewestIdeas(page: number): Observable<Idea[]> {
+  getNewestIdeas(page?: number): Observable<Idea[]> {
     const endpoint = page ? `idea/newest?page=${page}` : "idea/newest";
     return this.request("GET", endpoint);
   }

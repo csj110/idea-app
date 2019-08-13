@@ -1,6 +1,7 @@
 import { User } from "./user";
 
 export interface IdeaDTO {
+  id?: string;
   idea: string;
   desc: string;
 }

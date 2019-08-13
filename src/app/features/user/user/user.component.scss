@@ -1,0 +1,26 @@
+p-card {
+  margin: 1rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.user-card {
+  &-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-links {
+    a {
+      margin-right: 2rem;
+    }
+  }
+}
+
+.user-options {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
